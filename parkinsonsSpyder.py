@@ -57,12 +57,10 @@ model.fit(X_train, y_train)
 score = model.score(X_test, y_test)
 score=score*100
 
-parkinsons_forest.fit(X_train, y_train)
 model_for = RandomForestClassifier(n_estimators=10)
-model_for.fit(X_train, y_train)
+model_for.fit(X_train, y_train)  # Use model_for instead of parkinsons_forest
 score_for = model_for.score(X_test, y_test)
-score_for=score_for*100
-
+score_for = score_for * 100
 
 # Main content
 st.title("Prediction de Parkinsons!")
