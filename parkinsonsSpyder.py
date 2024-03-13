@@ -168,7 +168,7 @@ if selected == 'Home':
         df = pd.DataFrame(data)
         st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
     elif selected_option == "Graphes":
-        st.header("Some Graphs :")
+        st.header("Quelques Graphes :")
         st.write("Exemple de graphe en fonction de MDVP:Fo et MDVP:Fhi")
         
         sns.pairplot(data=data[['MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)']])
