@@ -1,1 +1,1 @@
-https://machine-learning-project-1.onrender.com
+https://mlprojecv2.streamlit.app/
