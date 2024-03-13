@@ -44,7 +44,7 @@ st.set_page_config(
     page_title="Hello",
     page_icon="👋",
 )
-data = pd.read_csv("C:/Users/adham/Downloads/parkinsons.csv")   
+data = pd.read_csv("parkinsons.csv")  
 data.drop(["name"],axis="columns",inplace=True)
 
 x=data.drop("status",axis=1)
