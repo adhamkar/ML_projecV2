@@ -193,7 +193,7 @@ if selected == 'Home':
 
 elif(selected=='Predire avec la regression logistique'):
     st.title('Regression logistique')
-    st.write("Précision du modèle:", "{:.2f}%".format(score))
+  
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -252,7 +252,7 @@ elif(selected=='Predire avec la regression logistique'):
 
 else:
     st.title('Predire avec Random forest')
-    st.write("Précision du modèle:", "{:.2f}%".format(score_for))
+   
     col1, col2, col3 = st.columns(3)
     
     with col1:
