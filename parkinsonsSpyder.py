@@ -18,8 +18,12 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 #load parkinsons data
-parkinsons_model=pickle.load(open('C:/Users/adham/parkinsons_model.sav', 'rb'))
-parkinsons_forest=pickle.load(open('C:/Users/adham/parkinsons_forest.sav', 'rb'))
+pickle_file = 'parkinsons_model.sav'
+
+if os.path.exists(pickle_file):
+    parkinsons_model = pickle.load(open(pickle_file, 'rb'))
+else:
+    print(f"Error: '{pickle_file}' not found.")
 
 # def load_model(file_name):
 #     with open(file_name, 'rb') as f:
