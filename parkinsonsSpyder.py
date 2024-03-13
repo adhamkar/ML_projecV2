@@ -170,16 +170,14 @@ if selected == 'Home':
     elif selected_option == "Graphes":
         st.header("Some Graphs :")
         st.write("Exemple de graphe en fonction de MDVP:Fo et MDVP:Fhi")
-        data = pd.read_csv("C:/Users/adham/Downloads/parkinsons.csv")
-        data.drop(["name"],axis="columns",inplace=True)
+        
         sns.pairplot(data=data[['MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)']])
         st.pyplot()
         sns.relplot(x="MDVP:Fo(Hz)", y="status", kind="line", data=data);
         st.pyplot()
         
     elif selected_option == "Information":
-        data = pd.read_csv("C:/Users/adham/Downloads/parkinsons.csv")
-        data.drop(["name"],axis="columns",inplace=True)
+        
         st.header("Description du dataset")
         st.write(data.describe())
         st.header("Les types des caracteristiques")
